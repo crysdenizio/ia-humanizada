@@ -8,7 +8,6 @@ import AIDemo from "./components/sections/AIDemo";
 import Benefits from "./components/sections/Benefits";
 import Clinics from "./components/sections/Clinics";
 import Testimonials from "./components/sections/Testimonials";
-import Plans from "./components/sections/Plans";
 import FinalCTA from "./components/sections/FinalCTA";
 import Footer from "./components/sections/Footer";
 import FloatingWhatsApp from "./components/sections/FloatingWhatsApp";
@@ -25,7 +24,6 @@ const Home = () => {
       <Benefits />
       <Clinics />
       <Testimonials />
-      <Plans />
       <FinalCTA />
       <Footer />
       <FloatingWhatsApp />

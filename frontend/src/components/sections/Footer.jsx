@@ -7,7 +7,6 @@ const QUICK_LINKS = [
   { label: "Demonstração", href: "#demo" },
   { label: "Clínicas", href: "#clinicas" },
   { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Planos", href: "#planos" },
 ];
 
 export const Footer = () => {
