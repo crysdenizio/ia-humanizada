@@ -66,13 +66,13 @@ export const PhoneMockup = ({ autoplay = true, loop = true }) => {
     const next = SCRIPT[step];
     if (!next) {
       if (loop) {
-        // eslint-disable-next-line react-hooks/set-state-in-effect
+      
         timer = setTimeout(() => setStep(0), 3500);
       }
       return () => clearTimeout(timer);
     }
     if (next.typing) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
+    
       setTyping(true);
       timer = setTimeout(() => {
         setTyping(false);
