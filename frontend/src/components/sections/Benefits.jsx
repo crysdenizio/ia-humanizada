@@ -1,39 +1,29 @@
-import React, { useEffect, useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
+import { Clock, Zap, CalendarCheck, MessagesSquare } from "lucide-react";
 
-const STATS = [
-  { value: 70, suffix: "%", prefix: "+", label: "mais agendamentos", desc: "média de aumento em clínicas após 60 dias." },
-  { value: 24, suffix: "h", prefix: "", label: "atendimento ininterrupto", desc: "todos os dias, inclusive feriados." },
-  { value: 8, suffix: "s", prefix: "<", label: "tempo de resposta", desc: "cliente nunca fica esperando." },
-  { value: 90, suffix: "%", prefix: "-", label: "perda de leads", desc: "redução em conversas abandonadas." },
+const BENEFITS = [
+  {
+    icon: Clock,
+    label: "Atendimento 24h",
+    desc: "Seu negócio responde à noite, no fim de semana e em feriados, sem ninguém de plantão.",
+  },
+  {
+    icon: Zap,
+    label: "Resposta em segundos",
+    desc: "O cliente não fica esperando. A IA responde na hora e já encaminha o que ele precisa.",
+  },
+  {
+    icon: CalendarCheck,
+    label: "Agenda e pedidos organizados",
+    desc: "Agendamentos e pedidos chegam organizados, sem se perder no meio da conversa.",
+  },
+  {
+    icon: MessagesSquare,
+    label: "Menos conversa abandonada",
+    desc: "Quem pergunta é atendido, em vez de ficar sem resposta até desistir.",
+  },
 ];
-
-const Counter = ({ end, prefix = "", suffix = "" }) => {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true });
-  const [val, setVal] = useState(0);
-
-  useEffect(() => {
-    if (!inView) return;
-    let start = 0;
-    const duration = 1800;
-    const startTime = performance.now();
-    const raf = (t) => {
-      const progress = Math.min((t - startTime) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setVal(Math.floor(eased * end));
-      if (progress < 1) requestAnimationFrame(raf);
-      else setVal(end);
-    };
-    requestAnimationFrame(raf);
-  }, [inView, end]);
-
-  return (
-    <span ref={ref} className="tabular-nums">
-      {prefix}{val}{suffix}
-    </span>
-  );
-};
 
 export const Benefits = () => {
   return (
@@ -50,30 +40,34 @@ export const Benefits = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <div className="text-xs tracking-[0.25em] uppercase text-[#FFD700] mb-4 font-semibold">Resultados reais</div>
+          <div className="text-xs tracking-[0.25em] uppercase text-[#FFD700] mb-4 font-semibold">O que muda no seu atendimento</div>
           <h2 className="font-['Outfit'] text-4xl md:text-5xl font-light text-white tracking-tighter leading-[1.05]" data-testid="benefits-title">
-            Os números falam por <span className="text-gold-shine font-medium">si mesmos.</span>
+            Atendimento rápido, organizado e{" "}
+            <span className="text-gold-shine font-medium">sempre disponível.</span>
           </h2>
         </motion.div>
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {STATS.map((s, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative glass-card rounded-2xl p-8 hover-gold-border text-center"
-              data-testid={`benefits-stat-${i}`}
-            >
-              <div className="font-['Outfit'] text-6xl md:text-7xl font-light text-gold-shine leading-none mb-3">
-                <Counter end={s.value} prefix={s.prefix} suffix={s.suffix} />
-              </div>
-              <div className="text-white text-sm font-medium uppercase tracking-wider mb-2">{s.label}</div>
-              <p className="text-white/50 text-xs leading-relaxed">{s.desc}</p>
-            </motion.div>
-          ))}
+          {BENEFITS.map((b, i) => {
+            const Icon = b.icon;
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="relative glass-card rounded-2xl p-8 hover-gold-border text-center"
+                data-testid={`benefits-stat-${i}`}
+              >
+                <div className="w-14 h-14 rounded-xl bg-[#FFD700]/10 border border-[#FFD700]/25 flex items-center justify-center mx-auto mb-5">
+                  <Icon size={26} className="text-[#FFD700]" strokeWidth={1.5} />
+                </div>
+                <div className="text-white text-base font-medium mb-2">{b.label}</div>
+                <p className="text-white/55 text-sm leading-relaxed">{b.desc}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
