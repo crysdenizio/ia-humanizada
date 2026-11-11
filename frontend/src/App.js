@@ -7,6 +7,7 @@ import Solution from "./components/sections/Solution";
 import AIDemo from "./components/sections/AIDemo";
 import Benefits from "./components/sections/Benefits";
 import Clinics from "./components/sections/Clinics";
+import SitesApps from "./components/sections/SitesApps"; // NOVO
 import Testimonials from "./components/sections/Testimonials";
 import FinalCTA from "./components/sections/FinalCTA";
 import Footer from "./components/sections/Footer";
@@ -23,6 +24,7 @@ const Home = () => {
       <AIDemo />
       <Benefits />
       <Clinics />
+      <SitesApps /> {/* NOVO */}
       <Testimonials />
       <FinalCTA />
       <Footer />
