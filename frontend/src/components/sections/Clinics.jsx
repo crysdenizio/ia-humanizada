@@ -5,7 +5,7 @@ import { IMAGES, WHATSAPP_LINK } from "../../lib/constants";
 
 const FEATURES = [
   { icon: CalendarCheck, title: "Agendamentos automáticos", desc: "Paciente escolhe o horário 24h por dia, direto no WhatsApp." },
-  { icon: BellRing, title: "Lembretes inteligentes", desc: "1 dia e 1 hora antes — reduzindo o no-show em até 60%." },
+  { icon: BellRing, title: "Lembretes inteligentes", desc: "Avisos antes da consulta, ajudando a reduzir faltas." },
   { icon: HeartPulse, title: "Confirmação de consulta", desc: "Paciente confirma com 1 clique. A agenda fica sempre atualizada." },
   { icon: Stethoscope, title: "Atendimento humanizado", desc: "Conversa empática, cuidadosa e com a voz da sua clínica." },
 ];
@@ -32,14 +32,14 @@ export const Clinics = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
 
-          {/* Floating stat card */}
+          {/* Floating info card */}
           <div className="absolute bottom-6 left-6 right-6 glass-card-gold rounded-2xl p-5 flex items-center gap-4">
             <div className="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center flex-shrink-0">
               <MessageCircle size={22} className="text-white" />
             </div>
             <div>
-              <div className="text-xs text-white/60 uppercase tracking-widest">Satisfação de pacientes</div>
-              <div className="font-['Outfit'] text-2xl text-white font-medium">98% <span className="text-[#FFD700] text-sm">aprovam o atendimento por IA</span></div>
+              <div className="text-xs text-white/60 uppercase tracking-widest">Para clínicas e consultórios</div>
+              <div className="font-['Outfit'] text-2xl text-white font-medium">24h <span className="text-[#FFD700] text-sm">de atendimento no WhatsApp</span></div>
             </div>
           </div>
         </motion.div>
