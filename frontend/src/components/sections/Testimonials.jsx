@@ -1,26 +1,27 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Star, Quote } from "lucide-react";
-import { IMAGES } from "../../lib/constants";
+import { ClipboardList, Hammer, ShieldCheck, LifeBuoy, ExternalLink } from "lucide-react";
 
-const TESTIMONIALS = [
+const STEPS = [
   {
-    name: "Dra. Carla Mendes",
-    role: "Clínica Vitalis — São Paulo",
-    avatar: IMAGES.testimonial2,
-    text: "Depois da automação da Denizio's, nossa clínica começou a responder pacientes em segundos. O número de agendamentos cresceu 73% em 2 meses.",
+    icon: ClipboardList,
+    title: "Conversa e diagnóstico",
+    desc: "Entendemos como o seu negócio atende hoje e onde dá pra ganhar tempo e vender mais.",
   },
   {
-    name: "Rafael Andrade",
-    role: "CEO — Andrade Estética",
-    avatar: IMAGES.testimonial3,
-    text: "Demiti a sensação de perder cliente por falta de atendimento. A IA fala como nós, agenda no horário certo e ainda reativa pacientes antigos.",
+    icon: Hammer,
+    title: "Construção sob medida",
+    desc: "Criamos a automação, o site ou o aplicativo com a cara e a linguagem do seu negócio.",
   },
   {
-    name: "Marcos Lopes",
-    role: "Dir. Comercial — Imobiliária Lopes",
-    avatar: IMAGES.testimonial1,
-    text: "Os corretores chegavam às 9h e já tinham 30 leads pré-qualificados pela IA. O ROI no primeiro mês foi simplesmente absurdo.",
+    icon: ShieldCheck,
+    title: "Testes e ajustes",
+    desc: "Testamos tudo com você antes de ir pro ar, para o atendimento sair certo desde o primeiro dia.",
+  },
+  {
+    icon: LifeBuoy,
+    title: "Entrega e suporte",
+    desc: "Você recebe tudo funcionando e conta com a gente para ajustes e evoluções.",
   },
 ];
 
@@ -37,46 +38,67 @@ export const Testimonials = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <div className="text-xs tracking-[0.25em] uppercase text-[#FFD700] mb-4 font-semibold">Quem já transformou</div>
+          <div className="text-xs tracking-[0.25em] uppercase text-[#FFD700] mb-4 font-semibold">Como a gente trabalha</div>
           <h2 className="font-['Outfit'] text-4xl md:text-5xl font-light text-white tracking-tighter leading-[1.05]" data-testid="testimonials-title">
-            Histórias reais de quem <br />
-            <span className="text-gold-shine font-medium">multiplicou resultados.</span>
+            Do primeiro contato até <br />
+            <span className="text-gold-shine font-medium">o sistema funcionando.</span>
           </h2>
         </motion.div>
 
-        <div className="mt-16 grid md:grid-cols-3 gap-6">
-          {TESTIMONIALS.map((t, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-30px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative glass-card-gold rounded-3xl p-7 hover-gold-border flex flex-col"
-              data-testid={`testimonial-card-${i}`}
-            >
-              <Quote size={28} className="text-[#FFD700]/50 mb-4" />
-
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, s) => (
-                  <Star key={s} size={16} className="text-[#FFD700]" fill="#FFD700" />
-                ))}
-              </div>
-
-              <p className="text-white/85 text-sm md:text-base leading-relaxed flex-1 italic">
-                &ldquo;{t.text}&rdquo;
-              </p>
-
-              <div className="mt-6 flex items-center gap-3 pt-5 border-t border-white/10">
-                <img src={t.avatar} alt={t.name} className="w-11 h-11 rounded-full object-cover ring-1 ring-[#FFD700]/40" />
-                <div>
-                  <div className="font-['Outfit'] text-white font-medium text-sm">{t.name}</div>
-                  <div className="text-white/50 text-xs">{t.role}</div>
+        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {STEPS.map((s, i) => {
+            const Icon = s.icon;
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-30px" }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="relative glass-card-gold rounded-3xl p-7 hover-gold-border flex flex-col"
+                data-testid={`step-card-${i}`}
+              >
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-12 h-12 rounded-lg bg-[#FFD700]/10 border border-[#FFD700]/25 flex items-center justify-center">
+                    <Icon size={22} className="text-[#FFD700]" strokeWidth={1.5} />
+                  </div>
+                  <span className="font-['Outfit'] text-3xl font-light text-[#FFD700]/40">0{i + 1}</span>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+                <h3 className="font-['Outfit'] text-lg font-medium text-white mb-2">{s.title}</h3>
+                <p className="text-sm text-white/60 leading-relaxed">{s.desc}</p>
+              </motion.div>
+            );
+          })}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ duration: 0.5 }}
+          className="mt-14 glass-card-gold rounded-3xl p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6"
+          data-testid="flowops-project-card"
+        >
+          <div className="max-w-2xl">
+            <div className="text-xs tracking-[0.25em] uppercase text-[#FFD700] mb-3 font-semibold">Projeto nosso</div>
+            <h3 className="font-['Outfit'] text-2xl md:text-3xl font-light text-white tracking-tight">
+              FlowOps: aprovação de posts para social media
+            </h3>
+            <p className="mt-3 text-white/60 leading-relaxed">
+              Um aplicativo que a própria Denizio's criou. O profissional envia o trabalho e o cliente aprova
+              com um toque, tudo registrado num lugar só. É o tipo de sistema sob medida que a gente constrói para o seu negócio.
+            </p>
+          </div>
+          <a
+            href="https://site-flowops.deniziosglobal.com.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-shine inline-flex items-center gap-2 bg-[#FFD700] text-black font-semibold rounded-full px-7 py-4 hover:shadow-[0_0_30px_rgba(255,215,0,0.4)] transition-all whitespace-nowrap self-start md:self-auto"
+            data-testid="flowops-project-link"
+          >
+            Conhecer o FlowOps <ExternalLink size={18} />
+          </a>
+        </motion.div>
       </div>
     </section>
   );
