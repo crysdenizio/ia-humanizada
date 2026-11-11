@@ -87,7 +87,7 @@ export const Hero = () => {
             className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs text-white/50"
             data-testid="hero-trust-bar"
           >
-            <div className="flex items-center gap-2"><span className="w-1 h-1 bg-[#FFD700] rounded-full" /> +500 negócios atendidos</div>
+            <div className="flex items-center gap-2"><span className="w-1 h-1 bg-[#FFD700] rounded-full" /> Atendimento 24h no WhatsApp</div>
             <div className="flex items-center gap-2"><span className="w-1 h-1 bg-[#FFD700] rounded-full" /> Resposta em segundos</div>
             <div className="flex items-center gap-2"><span className="w-1 h-1 bg-[#FFD700] rounded-full" /> IA treinada com sua marca</div>
           </motion.div>
