@@ -1,7 +1,7 @@
 export const CONTACT = {
   whatsapp: "5512988217813",
   whatsappDisplay: "(12) 98821-7813",
-  email: "crysdeniziomarketingdigital@gmail.com",
+  email: "contato.deniziosglobal@gmail.com",
   instagram: "deniziosautomacao",
   instagramUrl: "https://instagram.com/deniziosautomacao",
 };
