@@ -20,7 +20,7 @@ export const FinalCTA = () => {
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card-gold mb-8"
         >
           <Sparkles size={14} className="text-[#FFD700]" />
-          <span className="text-xs tracking-[0.2em] uppercase text-[#FFD700] font-medium">A hora é agora</span>
+          <span className="text-xs tracking-[0.2em] uppercase text-[#FFD700] font-medium">Vamos conversar</span>
         </motion.div>
 
         <motion.h2
@@ -42,8 +42,8 @@ export const FinalCTA = () => {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="mt-8 text-white/70 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
         >
-          Cada dia sem automação é um cliente perdido. Vamos transformar o seu atendimento
-          em uma máquina de vendas — começando hoje.
+          Conte pra gente como funciona o seu negócio. Vamos ver juntos o que dá pra automatizar
+          no atendimento, nos pedidos e na sua presença na internet, com IA, site ou aplicativo.
         </motion.p>
 
         <motion.div
@@ -72,7 +72,7 @@ export const FinalCTA = () => {
           transition={{ delay: 0.5 }}
           className="mt-6 text-xs text-white/40"
         >
-          Resposta em menos de 5 minutos durante o horário comercial.
+          Respondemos pelo WhatsApp o mais rápido possível.
         </motion.p>
       </div>
     </section>
