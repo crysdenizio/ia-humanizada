@@ -28,11 +28,11 @@ export const AIDemo = () => {
             Veja a IA em ação
           </div>
           <h2 className="font-['Outfit'] text-4xl md:text-5xl font-light text-white tracking-tighter leading-[1.05]" data-testid="demo-title">
-            Uma conversa que parece <span className="text-gold-shine font-medium">100% humana.</span>
+            Uma conversa natural, <span className="text-gold-shine font-medium">no jeito da sua marca.</span>
           </h2>
           <p className="mt-6 text-white/60 text-lg leading-relaxed">
-            Assista ao lado uma simulação real do nosso atendimento.
-            Cada palavra é pensada para vender, agendar e encantar.
+            Veja ao lado um exemplo de como o atendimento funciona.
+            Cada resposta é pensada para atender, agendar e encantar o seu cliente.
           </p>
 
           <div className="mt-8 space-y-3">
