@@ -4,13 +4,13 @@ import { Clock4, Zap, CalendarCheck2, MessageSquareMore, Brain, Users, RefreshCc
 
 const CARDS = [
   { icon: Clock4, title: "Atendimento 24h", desc: "Madrugada, feriado ou domingo — sua IA continua respondendo." },
-  { icon: Zap, title: "Respostas instantâneas", desc: "Cliente nunca espera. Cada mensagem recebe atenção em segundos." },
+  { icon: Zap, title: "Respostas instantâneas", desc: "O cliente não fica esperando: cada mensagem recebe atenção na hora." },
   { icon: CalendarCheck2, title: "Agendamento automático", desc: "A IA verifica a agenda, sugere horários e confirma sem intervenção." },
   { icon: MessageSquareMore, title: "Integração WhatsApp", desc: "Roda diretamente no canal que o seu cliente já usa todo dia." },
   { icon: Brain, title: "IA humanizada", desc: "Treinada com a voz da sua marca — emojis, tom e gírias incluídos." },
   { icon: Users, title: "Organização de leads", desc: "Cada conversa vira contato, com histórico e etapa do funil." },
   { icon: RefreshCcw, title: "Recuperação de clientes", desc: "A IA reativa quem sumiu, com mensagem certa na hora certa." },
-  { icon: TrendingUp, title: "Escalável", desc: "Atende 10, 100 ou 10.000 clientes simultâneos — sem perder qualidade." },
+  { icon: TrendingUp, title: "Escalável", desc: "Atende vários clientes ao mesmo tempo, sem fila e sem perder qualidade." },
 ];
 
 export const Solution = () => {
