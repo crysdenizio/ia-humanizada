@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Clock4, Zap, CalendarCheck2, MessageSquareMore, Brain, Users, RefreshCcw, TrendingUp } from "lucide-react";
+import { Clock4, Zap, CalendarCheck2, MessageSquareMore, Brain, Plug, RefreshCcw, TrendingUp } from "lucide-react";
 
 const CARDS = [
   { icon: Clock4, title: "Atendimento 24h", desc: "Madrugada, feriado ou domingo — sua IA continua respondendo." },
@@ -8,7 +8,7 @@ const CARDS = [
   { icon: CalendarCheck2, title: "Agendamento automático", desc: "A IA verifica a agenda, sugere horários e confirma sem intervenção." },
   { icon: MessageSquareMore, title: "Integração WhatsApp", desc: "Roda diretamente no canal que o seu cliente já usa todo dia." },
   { icon: Brain, title: "IA humanizada", desc: "Treinada com a voz da sua marca — emojis, tom e gírias incluídos." },
-  { icon: Users, title: "Organização de leads", desc: "Cada conversa vira contato, com histórico e etapa do funil." },
+  { icon: Plug, title: "Integrações sob medida", desc: "Conectamos o atendimento às ferramentas do seu negócio, como planilhas, agenda e sistemas." },
   { icon: RefreshCcw, title: "Recuperação de clientes", desc: "A IA reativa quem sumiu, com mensagem certa na hora certa." },
   { icon: TrendingUp, title: "Escalável", desc: "Atende vários clientes ao mesmo tempo, sem fila e sem perder qualidade." },
 ];
