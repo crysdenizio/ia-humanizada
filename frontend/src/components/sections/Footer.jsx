@@ -6,7 +6,8 @@ const QUICK_LINKS = [
   { label: "Solução", href: "#solucao" },
   { label: "Demonstração", href: "#demo" },
   { label: "Clínicas", href: "#clinicas" },
-  { label: "Depoimentos", href: "#depoimentos" },
+  { label: "Sites e apps", href: "#sites-e-apps" },
+  { label: "Como funciona", href: "#depoimentos" },
 ];
 
 export const Footer = () => {
@@ -28,8 +29,8 @@ export const Footer = () => {
               </div>
             </a>
             <p className="mt-5 text-white/55 text-sm leading-relaxed max-w-md">
-              Automação inteligente com IA humanizada para clínicas, consultórios e
-              empresas que querem escalar atendimento sem perder a essência.
+              Automação com IA, sites e aplicativos para clínicas, restaurantes, barbearias e
+              outros negócios que querem escalar o atendimento sem perder a essência.
             </p>
 
             <div className="mt-6 flex items-center gap-3">
