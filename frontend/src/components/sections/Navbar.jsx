@@ -7,7 +7,8 @@ const links = [
   { label: "Solução", href: "#solucao" },
   { label: "Demonstração", href: "#demo" },
   { label: "Clínicas", href: "#clinicas" },
-  { label: "Depoimentos", href: "#depoimentos" },
+  { label: "Sites e apps", href: "#sites-e-apps" },
+  { label: "Como funciona", href: "#depoimentos" },
 ];
 
 export const Navbar = () => {
@@ -39,7 +40,7 @@ export const Navbar = () => {
           </div>
         </a>
 
-        <nav className="hidden lg:flex items-center gap-9">
+        <nav className="hidden lg:flex items-center gap-7">
           {links.map((l) => (
             <a
               key={l.href}
