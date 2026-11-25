@@ -1,14 +1,17 @@
 import React from "react";
-import { Mail, Phone, Instagram, MessageCircle, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Mail, Instagram, MessageCircle } from "lucide-react";
 import { CONTACT, LOGO_URL, WHATSAPP_LINK } from "../../lib/constants";
+import seo from "../../lib/seoPages.json";
 
+// Links com "/#" funcionam tanto na home quanto nas páginas internas.
 const QUICK_LINKS = [
-  { label: "Solução", href: "#solucao" },
-  { label: "Demonstração", href: "#demo" },
-  { label: "Clínicas", href: "#clinicas" },
-  { label: "Sites e apps", href: "#sites-e-apps" },
-  { label: "Como funciona", href: "#depoimentos" },
-];
+  { label: "Solução", id: "solucao" },
+  { label: "Demonstração", id: "demo" },
+  { label: "Clínicas", id: "clinicas" },
+  { label: "Sites e apps", id: "sites-e-apps" },
+  { label: "Como funciona", id: "depoimentos" },
+].map((l) => ({ ...l, href: `/#${l.id}` }));
 
 export const Footer = () => {
   const year = new Date().getFullYear();
@@ -21,7 +24,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-12 gap-10">
           {/* Brand */}
           <div className="md:col-span-5">
-            <a href="#hero" className="flex items-center gap-3" data-testid="footer-logo">
+            <a href="/#hero" className="flex items-center gap-3" data-testid="footer-logo">
               <img src={LOGO_URL} alt="Denizios IA Global Solutions" className="w-14 h-14 rounded-full object-cover ring-1 ring-[#FFD700]/40" />
               <div>
                 <div className="font-['Outfit'] text-xl text-gold-gradient font-semibold leading-tight">Denizio&apos;s</div>
@@ -74,10 +77,24 @@ export const Footer = () => {
                   <a
                     href={l.href}
                     className="text-white/55 hover:text-[#FFD700] transition-colors text-sm"
-                    data-testid={`footer-link-${l.href.replace("#", "")}`}
+                    data-testid={`footer-link-${l.id}`}
                   >
                     {l.label}
                   </a>
+                </li>
+              ))}
+            </ul>
+
+            <h4 className="font-['Outfit'] text-white font-medium mt-8 mb-5 text-sm uppercase tracking-widest">Serviços</h4>
+            <ul className="space-y-3" data-testid="footer-services">
+              {seo.pages.map((p) => (
+                <li key={p.slug}>
+                  <Link
+                    to={`/${p.slug}`}
+                    className="text-white/55 hover:text-[#FFD700] transition-colors text-sm"
+                  >
+                    {p.navLabel}
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -49,8 +49,9 @@ export const Hero = () => {
             className="mt-7 max-w-xl text-base md:text-lg text-white/70 leading-relaxed"
             data-testid="hero-subheadline"
           >
-            Automação com <span className="text-[#FFD700]">IA humanizada</span> para atender clientes,
-            agendar consultas e aumentar vendas sem depender de recepcionistas.
+            Automação de WhatsApp com <span className="text-[#FFD700]">IA humanizada</span> para clínicas, restaurantes
+            e barbearias de São José dos Campos e de todo o Brasil: atende clientes, agenda consultas e aumenta vendas
+            sem depender de recepcionistas.
           </motion.p>
 
           <motion.div

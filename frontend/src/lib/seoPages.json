@@ -1,0 +1,417 @@
+{
+  "site": {
+    "url": "https://www.deniziosglobal.com.br",
+    "name": "Denizio's IA Global Solutions",
+    "shortName": "Denizio's IA",
+    "city": "São José dos Campos",
+    "region": "SP",
+    "country": "BR",
+    "phone": "+5512988217813",
+    "phoneDisplay": "(12) 98821-7813",
+    "email": "contato.deniziosglobal@gmail.com",
+    "instagram": "https://www.instagram.com/deniziosautomacao",
+    "logo": "https://customer-assets.emergentagent.com/job_3b1f56ac-6f46-4259-b8ea-d33211c4462c/artifacts/cv7grtyj_image.png",
+    "flowops": "https://site-flowops.deniziosglobal.com.br"
+  },
+  "home": {
+    "title": "Automação WhatsApp com IA | Denizio's – São José dos Campos",
+    "description": "Agentes de IA no WhatsApp que atendem, agendam e vendem 24h para clínicas, restaurantes e barbearias. Sites e apps em São José dos Campos.",
+    "h1": "Denizio's IA Global Solutions: automação de WhatsApp com IA, sites e aplicativos em São José dos Campos",
+    "lead": "Atendimento inteligente e humanizado 24 horas por dia no WhatsApp. Agentes de IA, CRM, sites, cardápios digitais e aplicativos para clínicas, restaurantes, barbearias, cabeleireiros, pet shops e outros negócios de São José dos Campos e de todo o Brasil."
+  },
+  "steps": [
+    {
+      "title": "Conversa e diagnóstico",
+      "desc": "Entendemos como o seu negócio atende hoje e onde dá pra ganhar tempo e vender mais."
+    },
+    {
+      "title": "Construção sob medida",
+      "desc": "Criamos a automação, o site ou o aplicativo com a cara e a linguagem do seu negócio."
+    },
+    {
+      "title": "Testes e ajustes",
+      "desc": "Testamos tudo com você antes de ir pro ar, para o atendimento sair certo desde o primeiro dia."
+    },
+    {
+      "title": "Entrega e suporte",
+      "desc": "Você recebe tudo funcionando e conta com a gente para ajustes e evoluções."
+    }
+  ],
+  "pages": [
+    {
+      "slug": "criacao-de-sites-sao-jose-dos-campos",
+      "navLabel": "Criação de sites em SJC",
+      "title": "Criação de Sites em São José dos Campos | Denizio's IA",
+      "description": "Criação de sites e lojas virtuais em São José dos Campos: rápidos, bonitos no celular e prontos para o Google. Peça um orçamento no WhatsApp.",
+      "eyebrow": "Sites e lojas virtuais · São José dos Campos",
+      "h1": "Criação de sites em São José dos Campos para o seu negócio ser encontrado no Google",
+      "lead": "A Denizio's IA cria sites institucionais e lojas virtuais para negócios de São José dos Campos e região: rápidos, bonitos no celular, com botão de WhatsApp e uma estrutura pronta para aparecer nas buscas.",
+      "serviceName": "Criação de sites e lojas virtuais",
+      "serviceType": "Criação de sites",
+      "ctaLabel": "Pedir orçamento do site",
+      "ctaMessage": "Olá! Vi a página de criação de sites em São José dos Campos e quero um orçamento.",
+      "benefits": [
+        {
+          "title": "Rápido e bonito no celular",
+          "desc": "A maior parte dos clientes chega pelo celular. O site é pensado primeiro para a tela pequena, com carregamento leve."
+        },
+        {
+          "title": "Estrutura pronta para o Google",
+          "desc": "Título, descrição, mapa do site (sitemap), dados estruturados e páginas por serviço, para o Google entender o que você faz e onde atende."
+        },
+        {
+          "title": "Conectado ao WhatsApp",
+          "desc": "Botões de contato e mensagens prontas levam o visitante direto para a conversa com você ou com a sua IA de atendimento."
+        },
+        {
+          "title": "Loja virtual quando fizer sentido",
+          "desc": "Catálogo, pedidos e pagamentos para quem vende produtos, sempre dimensionado ao tamanho do seu negócio."
+        },
+        {
+          "title": "Integrado à automação",
+          "desc": "O site conversa com o atendimento por IA, a agenda e as planilhas do negócio, em vez de ser só uma vitrine."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Para quais negócios",
+          "paragraphs": [
+            "Atendemos clínicas e consultórios, restaurantes e lanchonetes, barbearias e salões, pet shops, prestadores de serviço e comércios em São José dos Campos e região. Também trabalhamos de forma remota com empresas de outras cidades."
+          ]
+        },
+        {
+          "heading": "SEO local desde o primeiro dia",
+          "paragraphs": [
+            "Para aparecer em buscas como \"criação de sites perto de mim\", o site precisa deixar claro o que você faz, onde atende e como falar com você. Organizamos a página, o texto e os dados técnicos com essa lógica e recomendamos conectar o site ao seu perfil no Google Meu Negócio."
+          ]
+        },
+        {
+          "heading": "O que acompanha o projeto",
+          "paragraphs": [
+            "Orientação para domínio e publicação, configuração do Google Analytics e do Search Console e ajustes depois da entrega. Se fizer sentido para o seu negócio, o site já nasce integrado com atendimento por IA no WhatsApp."
+          ]
+        }
+      ],
+      "showSteps": true,
+      "faq": [
+        {
+          "q": "Quanto tempo leva para o site ficar pronto?",
+          "a": "Depende do tamanho do projeto. No diagnóstico inicial entendemos o que você precisa e combinamos o prazo antes de começar."
+        },
+        {
+          "q": "O site garante aparecer em primeiro lugar no Google?",
+          "a": "Ninguém pode garantir posição no Google. O que fazemos é montar a base técnica e de conteúdo para o seu site ser bem entendido e ter chance de aparecer, principalmente em buscas locais."
+        },
+        {
+          "q": "Vocês atendem fora de São José dos Campos?",
+          "a": "Sim. Atendemos São José dos Campos e região e também empresas de outras cidades, de forma remota, por WhatsApp e videochamada."
+        },
+        {
+          "q": "O site pode ter atendimento por IA no WhatsApp?",
+          "a": "Pode. Conectamos o site a um agente de IA que responde clientes, agenda horários e organiza pedidos, na linguagem da sua marca."
+        }
+      ],
+      "related": [
+        "automacao-whatsapp-clinicas",
+        "cardapio-digital-restaurantes",
+        "agente-ia-barbearias",
+        "sobre"
+      ]
+    },
+    {
+      "slug": "automacao-whatsapp-clinicas",
+      "navLabel": "WhatsApp para clínicas",
+      "title": "Automação de WhatsApp para Clínicas com IA | Denizio's",
+      "description": "IA no WhatsApp para clínicas e consultórios: agenda consultas, confirma horários e envia lembretes 24h. Atendemos São José dos Campos e região.",
+      "eyebrow": "Clínicas e consultórios · São José dos Campos",
+      "h1": "Automação de WhatsApp com IA para clínicas e consultórios em São José dos Campos",
+      "lead": "Uma assistente de IA no WhatsApp que atende pacientes a qualquer hora, agenda consultas, confirma horários e envia lembretes, com a delicadeza de uma recepcionista experiente.",
+      "serviceName": "Automação de WhatsApp com IA para clínicas",
+      "serviceType": "Automação de atendimento",
+      "ctaLabel": "Quero para minha clínica",
+      "ctaMessage": "Olá! Vi a página de automação de WhatsApp para clínicas e quero saber mais.",
+      "benefits": [
+        {
+          "title": "Agendamento automático 24h",
+          "desc": "O paciente escolhe o horário direto no WhatsApp, de madrugada, no fim de semana ou no feriado."
+        },
+        {
+          "title": "Lembretes e confirmação",
+          "desc": "Avisos antes da consulta e confirmação com um toque, ajudando a reduzir faltas."
+        },
+        {
+          "title": "Resposta em segundos",
+          "desc": "Fora do horário, no almoço ou quando a recepção está ocupada, ninguém fica sem resposta."
+        },
+        {
+          "title": "Atendimento humanizado",
+          "desc": "Conversa empática e cuidadosa, treinada com a voz e as regras da sua clínica."
+        },
+        {
+          "title": "Agenda sempre atualizada",
+          "desc": "A IA consulta e confirma horários na agenda, como o Google Calendar, sem intervenção manual."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "O problema que a automação resolve",
+          "paragraphs": [
+            "Telefone tocando sem ninguém atender, mensagens espalhadas em vários canais e pacientes que desistem quando a resposta demora. A IA responde na hora, coleta o que a clínica precisa e organiza o agendamento."
+          ]
+        },
+        {
+          "heading": "O que a IA faz e o que continua com a sua equipe",
+          "paragraphs": [
+            "A IA cuida do que é repetitivo: horários disponíveis, confirmação, remarcação, endereço, convênios aceitos e orientações administrativas. Assuntos clínicos, dúvidas sobre tratamento e casos sensíveis são encaminhados para a equipe. A IA não faz diagnóstico e não substitui o atendimento profissional."
+          ]
+        },
+        {
+          "heading": "Cuidado com os dados dos pacientes",
+          "paragraphs": [
+            "Dados de saúde pedem atenção. Configuramos a automação para coletar só o necessário para o agendamento e conversamos com a clínica sobre boas práticas de privacidade e a LGPD."
+          ]
+        }
+      ],
+      "showSteps": false,
+      "faq": [
+        {
+          "q": "A IA substitui a recepcionista?",
+          "a": "Ela cobre os horários e as demandas repetitivas, e a sua equipe assume o que exige atenção humana. A ideia é a recepção render mais, não desaparecer."
+        },
+        {
+          "q": "Funciona com a agenda que a minha clínica já usa?",
+          "a": "Integramos com ferramentas como o Google Calendar e planilhas, e avaliamos outros sistemas caso a caso."
+        },
+        {
+          "q": "A IA dá orientação médica?",
+          "a": "Não. Ela é configurada para agendamento, confirmação e informações administrativas, e encaminha qualquer assunto clínico para a equipe."
+        },
+        {
+          "q": "Vocês atendem clínicas fora de São José dos Campos?",
+          "a": "Sim. Atendemos São José dos Campos e região e também clínicas de outras cidades, de forma remota."
+        }
+      ],
+      "related": [
+        "criacao-de-sites-sao-jose-dos-campos",
+        "agente-ia-barbearias",
+        "cardapio-digital-restaurantes",
+        "sobre"
+      ]
+    },
+    {
+      "slug": "cardapio-digital-restaurantes",
+      "navLabel": "Cardápio digital",
+      "title": "Cardápio Digital com Pedido no WhatsApp | Denizio's IA",
+      "description": "Cardápio digital com pedido pelo WhatsApp para restaurantes, lanchonetes e delivery em São José dos Campos e região. Fale com a Denizio's IA.",
+      "eyebrow": "Restaurantes e delivery · São José dos Campos",
+      "h1": "Cardápio digital com pedido pelo WhatsApp para restaurantes e delivery",
+      "lead": "Um cardápio online bonito no celular, com pedido direto pelo WhatsApp, para restaurantes, lanchonetes e deliveries de São José dos Campos e região receberem pedidos sem se enrolar.",
+      "serviceName": "Cardápio digital com pedido pelo WhatsApp",
+      "serviceType": "Cardápio digital",
+      "ctaLabel": "Quero um cardápio digital",
+      "ctaMessage": "Olá! Vi a página de cardápio digital e quero saber mais para o meu restaurante.",
+      "benefits": [
+        {
+          "title": "Cardápio no celular do cliente",
+          "desc": "Fotos, descrições e preços em uma página rápida, que abre no navegador sem precisar instalar nada."
+        },
+        {
+          "title": "Pedido direto pelo WhatsApp",
+          "desc": "O cliente escolhe os itens e envia o pedido para o WhatsApp do seu estabelecimento."
+        },
+        {
+          "title": "Pedidos organizados",
+          "desc": "Agendamentos e pedidos chegam organizados, sem se perder no meio da conversa."
+        },
+        {
+          "title": "Atendimento por IA",
+          "desc": "Uma IA responde dúvidas frequentes, como horário, endereço e itens do cardápio, mesmo fora do expediente."
+        },
+        {
+          "title": "Integrações sob medida",
+          "desc": "Planilhas, painel de pedidos e, quando faz sentido para a operação, impressão de comanda na cozinha."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Do cardápio ao pedido",
+          "paragraphs": [
+            "O cliente abre o cardápio, escolhe os itens e envia o pedido pelo WhatsApp. Com a automação, a IA pode confirmar o pedido, tirar dúvidas e organizar as informações para a equipe da cozinha."
+          ]
+        },
+        {
+          "heading": "Para quem é",
+          "paragraphs": [
+            "Restaurantes, lanchonetes, pizzarias, hamburguerias, marmitarias e deliveries que hoje anotam pedido na mão ou perdem tempo respondendo as mesmas perguntas o dia inteiro."
+          ]
+        },
+        {
+          "heading": "Experiência com pedidos por WhatsApp",
+          "paragraphs": [
+            "A Denizio's já desenvolveu sistemas de pedidos por WhatsApp com IA e impressão de comanda para restaurantes, então conhece a rotina de quem vende por delivery."
+          ]
+        }
+      ],
+      "showSteps": false,
+      "faq": [
+        {
+          "q": "O cliente precisa baixar um aplicativo?",
+          "a": "Não. O cardápio digital abre direto no navegador do celular, a partir de um link ou QR Code."
+        },
+        {
+          "q": "Dá para integrar com impressora de comanda?",
+          "a": "Quando faz sentido para a operação, sim. Avaliamos a integração conforme o seu fluxo de cozinha e atendimento."
+        },
+        {
+          "q": "A IA atende os clientes no WhatsApp?",
+          "a": "Sim. A IA responde dúvidas frequentes e organiza pedidos, e a sua equipe assume o que precisar de atenção humana."
+        },
+        {
+          "q": "Vocês atendem fora de São José dos Campos?",
+          "a": "Sim. Atendemos São José dos Campos e região e também restaurantes de outras cidades, de forma remota."
+        }
+      ],
+      "related": [
+        "criacao-de-sites-sao-jose-dos-campos",
+        "automacao-whatsapp-clinicas",
+        "agente-ia-barbearias",
+        "sobre"
+      ]
+    },
+    {
+      "slug": "agente-ia-barbearias",
+      "navLabel": "IA para barbearias",
+      "title": "Agente de IA para Barbearias no WhatsApp | Denizio's IA",
+      "description": "Agente de IA no WhatsApp para barbearias e salões: agenda horários, envia lembretes e reativa clientes. Atendemos São José dos Campos e região.",
+      "eyebrow": "Barbearias e salões · São José dos Campos",
+      "h1": "Agente de IA para barbearias: agenda cheia sem ficar preso ao celular",
+      "lead": "Um agente de IA no WhatsApp que responde clientes, marca horários, envia lembretes e chama de volta quem sumiu, para o barbeiro focar no corte.",
+      "serviceName": "Agente de IA para barbearias e salões",
+      "serviceType": "Automação de atendimento",
+      "ctaLabel": "Quero para minha barbearia",
+      "ctaMessage": "Olá! Vi a página de agente de IA para barbearias e quero saber mais.",
+      "benefits": [
+        {
+          "title": "Agendamento 24h",
+          "desc": "O cliente marca o horário a qualquer hora, sem esperar o barbeiro largar a máquina para responder."
+        },
+        {
+          "title": "Lembretes que reduzem faltas",
+          "desc": "Aviso antes do horário e confirmação rápida, para a cadeira não ficar vazia."
+        },
+        {
+          "title": "Respostas sobre serviços e horários",
+          "desc": "A IA explica serviços, valores e horários de funcionamento sempre do jeito que você definir."
+        },
+        {
+          "title": "Recuperação de clientes",
+          "desc": "A IA reativa quem sumiu, com a mensagem certa na hora certa."
+        },
+        {
+          "title": "Linguagem da sua barbearia",
+          "desc": "Tom, emojis e gírias treinados com a voz do seu negócio, sem cara de robô."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Mais tempo na cadeira, menos no celular",
+          "paragraphs": [
+            "Quem atende no WhatsApp enquanto corta cabelo perde ritmo e deixa mensagens sem resposta. Com o agente de IA, o cliente é atendido na hora e o horário já cai organizado na agenda."
+          ]
+        },
+        {
+          "heading": "Fidelização sem esforço",
+          "paragraphs": [
+            "Clientes costumam sumir sem aviso. A automação identifica quem está há um tempo sem voltar e envia uma mensagem para retomar o contato, sem você precisar lembrar de cada um."
+          ]
+        },
+        {
+          "heading": "Para barbearias, salões e estúdios",
+          "paragraphs": [
+            "Barbearias, salões de beleza, estúdios de sobrancelha e outros negócios de agenda em São José dos Campos e região, ou de qualquer cidade, com atendimento remoto."
+          ]
+        }
+      ],
+      "showSteps": false,
+      "faq": [
+        {
+          "q": "O agente de IA marca o horário sozinho?",
+          "a": "Sim. Ele verifica a agenda, sugere horários disponíveis e confirma com o cliente, sem você precisar intervir."
+        },
+        {
+          "q": "O cliente percebe que está falando com uma IA?",
+          "a": "A conversa é natural e na linguagem da sua barbearia. Você decide como a IA se apresenta e quando passar a conversa para você."
+        },
+        {
+          "q": "Funciona para salão de beleza e outros negócios de agenda?",
+          "a": "Funciona. A mesma lógica serve para salões, estúdios e outros negócios que vivem de horário marcado."
+        },
+        {
+          "q": "Vocês atendem fora de São José dos Campos?",
+          "a": "Sim. Atendemos São José dos Campos e região e também negócios de outras cidades, de forma remota."
+        }
+      ],
+      "related": [
+        "criacao-de-sites-sao-jose-dos-campos",
+        "automacao-whatsapp-clinicas",
+        "cardapio-digital-restaurantes",
+        "sobre"
+      ]
+    },
+    {
+      "slug": "sobre",
+      "navLabel": "Sobre",
+      "title": "Sobre a Denizio's IA Global Solutions | São José dos Campos",
+      "description": "Conheça a Denizio's IA Global Solutions, de São José dos Campos: automação com IA, sites, cardápios digitais e aplicativos para pequenos negócios.",
+      "eyebrow": "Quem somos",
+      "h1": "Sobre a Denizio's IA Global Solutions",
+      "lead": "A Denizio's IA Global Solutions é uma empresa de São José dos Campos (SP) que cria automações com IA, sites, cardápios digitais e aplicativos para pequenos negócios atenderem melhor e venderem mais.",
+      "serviceName": "Automação com IA, sites e aplicativos",
+      "serviceType": "Automação, sites e aplicativos",
+      "ctaLabel": "Falar com a Denizio's",
+      "ctaMessage": "Olá! Conheci a Denizio's IA pelo site e quero conversar sobre o meu negócio.",
+      "benefits": [],
+      "sections": [
+        {
+          "heading": "O que fazemos",
+          "paragraphs": [
+            "Criamos agentes de IA para atendimento no WhatsApp, automações e CRM com IA, sites institucionais, lojas virtuais, cardápios digitais e aplicativos sob medida. O foco são negócios como clínicas, restaurantes, barbearias, salões e pet shops."
+          ]
+        },
+        {
+          "heading": "Onde atuamos",
+          "paragraphs": [
+            "Somos de São José dos Campos, no interior de São Paulo, e atendemos negócios da cidade e da região. Também trabalhamos com empresas de outras cidades e estados, de forma remota."
+          ]
+        },
+        {
+          "heading": "Projeto próprio: FlowOps",
+          "paragraphs": [
+            "O FlowOps é um aplicativo criado pela própria Denizio's: o profissional envia o trabalho e o cliente aprova com um toque, com tudo registrado num lugar só. É o tipo de sistema sob medida que construímos para o seu negócio."
+          ],
+          "link": {
+            "label": "Conhecer o FlowOps",
+            "href": "https://site-flowops.deniziosglobal.com.br"
+          }
+        }
+      ],
+      "showSteps": true,
+      "faq": [
+        {
+          "q": "Onde fica a Denizio's IA?",
+          "a": "Em São José dos Campos, SP. O atendimento é feito principalmente por WhatsApp e videochamada, o que permite trabalhar com negócios de qualquer cidade."
+        },
+        {
+          "q": "Como começa um projeto?",
+          "a": "Com uma conversa no WhatsApp para entender como o seu negócio atende hoje. Depois combinamos o escopo e o prazo antes de começar a construir."
+        }
+      ],
+      "related": [
+        "automacao-whatsapp-clinicas",
+        "cardapio-digital-restaurantes",
+        "agente-ia-barbearias",
+        "criacao-de-sites-sao-jose-dos-campos"
+      ]
+    }
+  ]
+}
