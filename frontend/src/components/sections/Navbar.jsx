@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { LOGO_URL, WHATSAPP_LINK } from "../../lib/constants";
 
+// Links com "/#" funcionam tanto na home quanto nas páginas internas.
 const links = [
-  { label: "Solução", href: "#solucao" },
-  { label: "Demonstração", href: "#demo" },
-  { label: "Clínicas", href: "#clinicas" },
-  { label: "Sites e apps", href: "#sites-e-apps" },
-  { label: "Como funciona", href: "#depoimentos" },
-];
+  { label: "Solução", id: "solucao" },
+  { label: "Demonstração", id: "demo" },
+  { label: "Clínicas", id: "clinicas" },
+  { label: "Sites e apps", id: "sites-e-apps" },
+  { label: "Como funciona", id: "depoimentos" },
+].map((l) => ({ ...l, href: `/#${l.id}` }));
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -32,7 +33,7 @@ export const Navbar = () => {
       data-testid="navbar"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
-        <a href="#hero" className="flex items-center gap-3 group" data-testid="navbar-logo">
+        <a href="/#hero" className="flex items-center gap-3 group" data-testid="navbar-logo">
           <img src={LOGO_URL} alt="Denizios IA Global Solutions" className="h-12 w-12 rounded-full object-cover ring-1 ring-[#FFD700]/40 group-hover:ring-[#FFD700] transition-all" />
           <div className="hidden sm:block leading-tight">
             <div className="font-['Outfit'] text-base tracking-wide text-gold-gradient font-semibold">Denizio&apos;s</div>
@@ -46,7 +47,7 @@ export const Navbar = () => {
               key={l.href}
               href={l.href}
               className="text-sm text-white/70 hover:text-[#FFD700] transition-colors relative group"
-              data-testid={`nav-link-${l.href.replace("#", "")}`}
+              data-testid={`nav-link-${l.id}`}
             >
               {l.label}
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#FFD700] group-hover:w-full transition-all duration-300" />
@@ -89,7 +90,7 @@ export const Navbar = () => {
                 href={l.href}
                 onClick={() => setOpen(false)}
                 className="text-white/80 hover:text-[#FFD700] transition-colors py-2"
-                data-testid={`mobile-nav-link-${l.href.replace("#", "")}`}
+                data-testid={`mobile-nav-link-${l.id}`}
               >
                 {l.label}
               </a>
