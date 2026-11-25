@@ -9,7 +9,7 @@ export const CONTACT = {
 export const WHATSAPP_LINK = (msg = "Olá! Vim pelo site e gostaria de saber mais sobre a automação com IA.") =>
   `https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(msg)}`;
 
-export const LOGO_URL = "https://customer-assets.emergentagent.com/job_3b1f56ac-6f46-4259-b8ea-d33211c4462c/artifacts/cv7grtyj_image.png";
+export const LOGO_URL = "/img/logo-denizios.webp";
 
 // Imagens com tamanho e qualidade limitados (antes vinham no tamanho original, muito pesadas)
 export const IMAGES = {
