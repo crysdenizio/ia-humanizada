@@ -34,6 +34,17 @@ const useScrollToHash = () => {
   }, [hash]);
 };
 
+// Ao trocar de página (sem âncora), volta para o topo. Sem isso, o navegador
+// mantém a rolagem da página anterior e a nova abre no meio ou no rodapé.
+// "instant" evita a animação do `scroll-behavior: smooth` do CSS global.
+const ScrollToTop = () => {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (!hash) window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [pathname, hash]);
+  return null;
+};
+
 const Home = () => {
   useSeo({ title: seo.home.title, description: seo.home.description, path: "/" });
   useScrollToHash();
@@ -62,6 +73,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           {seo.pages.map((page) => (
