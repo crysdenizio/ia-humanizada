@@ -115,7 +115,8 @@
         "automacao-whatsapp-clinicas",
         "cardapio-digital-restaurantes",
         "agente-ia-barbearias",
-        "sobre"
+        "sobre",
+        "flowops"
       ]
     },
     {
@@ -359,6 +360,99 @@
       ]
     },
     {
+      "slug": "flowops",
+      "navLabel": "App FlowOps",
+      "title": "FlowOps: App de Aprovação de Posts para Social Media | Denizio's IA",
+      "description": "FlowOps é o app da Denizio's IA: o profissional envia o trabalho, o cliente aprova com um toque e tudo fica registrado num lugar só. Veja as telas.",
+      "eyebrow": "Projeto próprio · Denizio's IA, São José dos Campos",
+      "h1": "FlowOps: aprovação de posts para social media, do envio ao “aprovado”",
+      "lead": "Um aplicativo criado pela própria Denizio's. O profissional envia o trabalho, o cliente aprova com um toque e tudo fica registrado num lugar só, sem se perder em conversa de WhatsApp.",
+      "serviceName": "Aplicativo sob medida",
+      "serviceType": "Desenvolvimento de aplicativo",
+      "ctaLabel": "Quero um sistema assim",
+      "ctaMessage": "Olá! Vi o FlowOps no site da Denizio's e quero saber como seria um sistema sob medida para o meu negócio.",
+      "gallery": [
+        {
+          "src": "/img/flowops-inicio.webp",
+          "alt": "Tela inicial do aplicativo FlowOps com pendências, alterações pedidas, trabalhos aguardando aprovação e em produção",
+          "caption": "Início: o que precisa de você agora. Dados fictícios de demonstração."
+        },
+        {
+          "src": "/img/flowops-trabalhos.webp",
+          "alt": "Tela de trabalhos do aplicativo FlowOps com filtros por status: precisa de mim, aguardando, em produção, alteração, aprovado e concluído",
+          "caption": "Trabalhos: tudo filtrado por status. Dados fictícios de demonstração."
+        }
+      ],
+      "benefits": [
+        {
+          "title": "Aprovação com um toque",
+          "desc": "O cliente vê o trabalho e aprova ou pede alteração direto no app, sem procurar mensagem antiga."
+        },
+        {
+          "title": "Cada trabalho com seu status",
+          "desc": "Em produção, aguardando aprovação, alteração pedida, aprovado ou concluído: dá pra ver tudo de relance."
+        },
+        {
+          "title": "Tudo registrado num lugar só",
+          "desc": "O histórico de cada cliente e cada trabalho fica guardado, sem depender de conversa solta."
+        },
+        {
+          "title": "Avisos do que precisa de você",
+          "desc": "O app destaca o que está pendente, para nada ficar esquecido."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Por que criamos o FlowOps",
+          "paragraphs": [
+            "Quem trabalha com social media conhece a rotina: o post vai por WhatsApp, a resposta vem em outro dia, a alteração se perde no meio da conversa. O FlowOps organiza esse caminho, do envio até a aprovação.",
+            "É um projeto próprio da Denizio's IA, feito para mostrar na prática o tipo de sistema que a gente constrói."
+          ]
+        },
+        {
+          "heading": "Como o app organiza o trabalho",
+          "paragraphs": [
+            "Na tela inicial, o profissional vê quantas alterações foram pedidas, o que está aguardando aprovação e o que está em produção. Na aba de clientes, cada cliente tem os seus trabalhos. Na aba de trabalhos, os filtros mostram em segundos o que precisa de atenção."
+          ]
+        },
+        {
+          "heading": "Quer um sistema sob medida para o seu negócio?",
+          "paragraphs": [
+            "A mesma ideia serve para outros negócios: fluxo de aprovação, controle de pedidos, agenda, cadastro de clientes. A gente conversa sobre o seu processo e desenha um sistema do tamanho que o seu negócio precisa. Atendemos São José dos Campos e região, e também de forma remota."
+          ],
+          "link": {
+            "label": "Ver o FlowOps no ar",
+            "href": "https://site-flowops.deniziosglobal.com.br"
+          }
+        }
+      ],
+      "showSteps": true,
+      "faq": [
+        {
+          "q": "O FlowOps é um produto à venda?",
+          "a": "Ele é um projeto próprio da Denizio's IA, criado para validar a ideia e mostrar o nosso trabalho. Para saber sobre uso ou sobre um sistema parecido para o seu negócio, é só chamar no WhatsApp."
+        },
+        {
+          "q": "Os dados das imagens são reais?",
+          "a": "Não. As telas desta página usam nomes e trabalhos fictícios, apenas para demonstração."
+        },
+        {
+          "q": "Vocês criam um app como esse para o meu negócio?",
+          "a": "Criamos. A gente entende o seu processo, desenha as telas e constrói o sistema sob medida, de aplicativos a painéis e automações no WhatsApp."
+        },
+        {
+          "q": "Vocês atendem fora de São José dos Campos?",
+          "a": "Sim. Atendemos São José dos Campos e região e também negócios de outras cidades e estados, de forma remota."
+        }
+      ],
+      "related": [
+        "criacao-de-sites-sao-jose-dos-campos",
+        "cardapio-digital-restaurantes",
+        "automacao-whatsapp-clinicas",
+        "sobre"
+      ]
+    },
+    {
       "slug": "sobre",
       "navLabel": "Sobre",
       "title": "Sobre a Denizio's IA Global Solutions | São José dos Campos",
@@ -410,7 +504,8 @@
         "automacao-whatsapp-clinicas",
         "cardapio-digital-restaurantes",
         "agente-ia-barbearias",
-        "criacao-de-sites-sao-jose-dos-campos"
+        "criacao-de-sites-sao-jose-dos-campos",
+        "flowops"
       ]
     }
   ]
