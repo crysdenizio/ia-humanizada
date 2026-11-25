@@ -79,7 +79,7 @@ export const Testimonials = () => {
           className="mt-14 glass-card-gold rounded-3xl p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6"
           data-testid="flowops-project-card"
         >
-          <div className="max-w-2xl">
+          <div className="max-w-2xl min-w-0">
             <div className="text-xs tracking-[0.25em] uppercase text-[#FFD700] mb-3 font-semibold">Projeto nosso</div>
             <h3 className="font-['Outfit'] text-2xl md:text-3xl font-light text-white tracking-tight">
               FlowOps: aprovação de posts para social media
@@ -93,7 +93,7 @@ export const Testimonials = () => {
             href="https://site-flowops.deniziosglobal.com.br/"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-shine inline-flex items-center gap-2 bg-[#FFD700] text-black font-semibold rounded-full px-7 py-4 hover:shadow-[0_0_30px_rgba(255,215,0,0.4)] transition-all whitespace-nowrap self-start md:self-auto"
+            className="btn-shine inline-flex items-center gap-2 bg-[#FFD700] text-black font-semibold rounded-full px-7 py-4 hover:shadow-[0_0_30px_rgba(255,215,0,0.4)] transition-all whitespace-nowrap shrink-0 self-start md:self-auto"
             data-testid="flowops-project-link"
           >
             Conhecer o FlowOps <ExternalLink size={18} />
