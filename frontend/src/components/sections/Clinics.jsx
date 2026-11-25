@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Stethoscope, BellRing, CalendarCheck, HeartPulse, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Stethoscope, BellRing, CalendarCheck, HeartPulse, MessageCircle, ArrowRight } from "lucide-react";
 import { IMAGES, WHATSAPP_LINK } from "../../lib/constants";
 
 const FEATURES = [
@@ -86,15 +87,24 @@ export const Clinics = () => {
             })}
           </div>
 
-          <a
-            href={WHATSAPP_LINK("Olá! Tenho uma clínica e quero saber sobre a IA para agendamentos.")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-shine mt-9 inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold rounded-full px-7 py-4 hover:shadow-[0_0_30px_rgba(37,211,102,0.4)] transition-all"
-            data-testid="clinics-cta"
-          >
-            <MessageCircle size={18} /> Quero para minha clínica
-          </a>
+          <div className="mt-9 flex flex-wrap items-center gap-x-7 gap-y-4">
+            <a
+              href={WHATSAPP_LINK("Olá! Tenho uma clínica e quero saber sobre a IA para agendamentos.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-shine inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold rounded-full px-7 py-4 hover:shadow-[0_0_30px_rgba(37,211,102,0.4)] transition-all"
+              data-testid="clinics-cta"
+            >
+              <MessageCircle size={18} /> Quero para minha clínica
+            </a>
+            <Link
+              to="/automacao-whatsapp-clinicas"
+              className="inline-flex items-center gap-2 text-[#FFD700] font-medium hover:underline underline-offset-4"
+              data-testid="clinics-more"
+            >
+              Saiba mais sobre clínicas <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

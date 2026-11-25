@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Globe, UtensilsCrossed, Smartphone, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Globe, UtensilsCrossed, Smartphone, MessageCircle, ArrowRight } from "lucide-react";
 import { WHATSAPP_LINK } from "../../lib/constants";
 
 const ITEMS = [
@@ -72,15 +73,31 @@ export const SitesApps = () => {
           Para restaurantes, clínicas, barbearias, cabeleireiros, pet shops e outros negócios que querem vender e atender melhor.
         </p>
 
-        <a
-          href={WHATSAPP_LINK("Olá! Quero saber mais sobre site ou aplicativo para o meu negócio.")}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-shine mt-8 inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold rounded-full px-7 py-4 hover:shadow-[0_0_30px_rgba(37,211,102,0.4)] transition-all"
-          data-testid="sitesapps-cta"
-        >
-          <MessageCircle size={18} /> Falar no WhatsApp
-        </a>
+        <div className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-4">
+          <a
+            href={WHATSAPP_LINK("Olá! Quero saber mais sobre site ou aplicativo para o meu negócio.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-shine inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold rounded-full px-7 py-4 hover:shadow-[0_0_30px_rgba(37,211,102,0.4)] transition-all"
+            data-testid="sitesapps-cta"
+          >
+            <MessageCircle size={18} /> Falar no WhatsApp
+          </a>
+          <Link
+            to="/criacao-de-sites-sao-jose-dos-campos"
+            className="inline-flex items-center gap-2 text-[#FFD700] font-medium hover:underline underline-offset-4"
+            data-testid="sitesapps-more-sites"
+          >
+            Criação de sites em SJC <ArrowRight size={16} />
+          </Link>
+          <Link
+            to="/cardapio-digital-restaurantes"
+            className="inline-flex items-center gap-2 text-[#FFD700] font-medium hover:underline underline-offset-4"
+            data-testid="sitesapps-more-cardapio"
+          >
+            Cardápio digital <ArrowRight size={16} />
+          </Link>
+        </div>
       </div>
     </section>
   );

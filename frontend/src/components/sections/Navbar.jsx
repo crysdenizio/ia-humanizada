@@ -1,26 +1,48 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { LOGO_URL, WHATSAPP_LINK } from "../../lib/constants";
+import seo from "../../lib/seoPages.json";
 
 // Links com "/#" funcionam tanto na home quanto nas páginas internas.
-const links = [
-  { label: "Solução", id: "solucao" },
-  { label: "Demonstração", id: "demo" },
-  { label: "Clínicas", id: "clinicas" },
-  { label: "Sites e apps", id: "sites-e-apps" },
-  { label: "Como funciona", id: "depoimentos" },
-].map((l) => ({ ...l, href: `/#${l.id}` }));
+const anchorLinks = {
+  before: [
+    { label: "Solução", id: "solucao" },
+    { label: "Demonstração", id: "demo" },
+  ],
+  after: [{ label: "Como funciona", id: "depoimentos" }],
+};
+const toHref = (l) => ({ ...l, href: `/#${l.id}` });
+const before = anchorLinks.before.map(toHref);
+const after = anchorLinks.after.map(toHref);
+
+// Páginas de serviço (tudo menos "sobre") entram no menu "Serviços".
+const services = seo.pages.filter((p) => p.slug !== "sobre");
+const about = seo.pages.find((p) => p.slug === "sobre");
+
+const linkClass = "text-sm text-white/70 hover:text-[#FFD700] transition-colors relative group";
+const underline = (
+  <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#FFD700] group-hover:w-full transition-all duration-300" />
+);
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const renderAnchor = (l) => (
+    <a key={l.href} href={l.href} className={linkClass} data-testid={`nav-link-${l.id}`}>
+      {l.label}
+      {underline}
+    </a>
+  );
 
   return (
     <motion.header
@@ -42,17 +64,52 @@ export const Navbar = () => {
         </a>
 
         <nav className="hidden lg:flex items-center gap-7">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-sm text-white/70 hover:text-[#FFD700] transition-colors relative group"
-              data-testid={`nav-link-${l.id}`}
+          {before.map(renderAnchor)}
+
+          {/* Menu "Serviços" com as páginas de cada serviço */}
+          <div
+            className="relative"
+            onMouseEnter={() => setServicesOpen(true)}
+            onMouseLeave={() => setServicesOpen(false)}
+          >
+            <button
+              type="button"
+              onClick={() => setServicesOpen((v) => !v)}
+              aria-expanded={servicesOpen}
+              aria-haspopup="true"
+              className="flex items-center gap-1 text-sm text-white/70 hover:text-[#FFD700] transition-colors"
+              data-testid="nav-services-toggle"
             >
-              {l.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#FFD700] group-hover:w-full transition-all duration-300" />
-            </a>
-          ))}
+              Serviços
+              <ChevronDown size={14} className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
+            </button>
+            {servicesOpen && (
+              <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3" data-testid="nav-services-menu">
+                <div className="min-w-[250px] rounded-2xl bg-black/95 backdrop-blur-xl border border-[#FFD700]/20 p-2 shadow-[0_10px_40px_rgba(0,0,0,0.6)]">
+                  {services.map((p) => (
+                    <Link
+                      key={p.slug}
+                      to={`/${p.slug}`}
+                      onClick={() => setServicesOpen(false)}
+                      className="block rounded-xl px-4 py-3 text-sm text-white/80 hover:bg-[#FFD700]/10 hover:text-[#FFD700] transition-colors"
+                      data-testid={`nav-service-${p.slug}`}
+                    >
+                      {p.navLabel}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {after.map(renderAnchor)}
+
+          {about && (
+            <Link to={`/${about.slug}`} className={linkClass} data-testid="nav-link-sobre">
+              {about.navLabel}
+              {underline}
+            </Link>
+          )}
         </nav>
 
         <div className="flex items-center gap-3">
@@ -81,10 +138,10 @@ export const Navbar = () => {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="lg:hidden bg-black/95 border-t border-[#FFD700]/15"
+          className="lg:hidden bg-black/95 border-t border-[#FFD700]/15 max-h-[80vh] overflow-y-auto"
         >
           <div className="px-6 py-6 flex flex-col gap-4">
-            {links.map((l) => (
+            {before.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
@@ -95,6 +152,44 @@ export const Navbar = () => {
                 {l.label}
               </a>
             ))}
+
+            <div className="border-l border-[#FFD700]/30 pl-4 flex flex-col gap-1">
+              <div className="text-[11px] tracking-[0.2em] uppercase text-[#FFD700]/80 mb-1">Serviços</div>
+              {services.map((p) => (
+                <Link
+                  key={p.slug}
+                  to={`/${p.slug}`}
+                  onClick={() => setOpen(false)}
+                  className="text-white/80 hover:text-[#FFD700] transition-colors py-2"
+                  data-testid={`mobile-nav-service-${p.slug}`}
+                >
+                  {p.navLabel}
+                </Link>
+              ))}
+            </div>
+
+            {after.map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="text-white/80 hover:text-[#FFD700] transition-colors py-2"
+                data-testid={`mobile-nav-link-${l.id}`}
+              >
+                {l.label}
+              </a>
+            ))}
+            {about && (
+              <Link
+                to={`/${about.slug}`}
+                onClick={() => setOpen(false)}
+                className="text-white/80 hover:text-[#FFD700] transition-colors py-2"
+                data-testid="mobile-nav-link-sobre"
+              >
+                {about.navLabel}
+              </Link>
+            )}
+
             <a
               href={WHATSAPP_LINK()}
               target="_blank"
