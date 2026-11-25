@@ -106,7 +106,7 @@ export const PhoneMockup = ({ autoplay = true, loop = true }) => {
             {/* Header */}
             <div className="bg-[#075E54] text-white px-3 pt-9 pb-2 flex items-center gap-3">
               <img
-                src="https://customer-assets.emergentagent.com/job_3b1f56ac-6f46-4259-b8ea-d33211c4462c/artifacts/cv7grtyj_image.png"
+                src="/img/logo-denizios.webp"
                 alt="IA"
                 className="w-9 h-9 rounded-full object-cover ring-1 ring-[#FFD700]"
               />
