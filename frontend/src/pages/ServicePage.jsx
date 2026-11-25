@@ -71,6 +71,30 @@ export const ServicePage = ({ page }) => {
         </div>
       </section>
 
+      {/* Telas do app (só nas páginas que têm `gallery`) */}
+      {page.gallery && page.gallery.length > 0 && (
+        <section className="relative pb-8 md:pb-12 bg-black" data-testid="service-gallery">
+          <div className="max-w-4xl mx-auto px-6 md:px-12">
+            <ul className="flex flex-wrap justify-center gap-8 md:gap-12">
+              {page.gallery.map((img) => (
+                <li key={img.src} className="w-full max-w-[280px]">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    width="720"
+                    height="1280"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-auto rounded-3xl border border-[#FFD700]/20 shadow-[0_0_40px_rgba(255,215,0,0.08)]"
+                  />
+                  {img.caption && <p className="mt-3 text-center text-xs text-white/50">{img.caption}</p>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       {/* Benefícios */}
       {page.benefits && page.benefits.length > 0 && (
         <section className="relative py-16 md:py-20 bg-black">

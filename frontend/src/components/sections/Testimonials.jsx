@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ClipboardList, Hammer, ShieldCheck, LifeBuoy, ExternalLink } from "lucide-react";
+import { ClipboardList, Hammer, ShieldCheck, LifeBuoy, ExternalLink, ArrowRight } from "lucide-react";
 
 const STEPS = [
   {
@@ -76,10 +77,10 @@ export const Testimonials = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-30px" }}
           transition={{ duration: 0.5 }}
-          className="mt-14 glass-card-gold rounded-3xl p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6"
+          className="mt-14 glass-card-gold rounded-3xl p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-8"
           data-testid="flowops-project-card"
         >
-          <div className="max-w-2xl min-w-0">
+          <div className="max-w-xl min-w-0">
             <div className="text-xs tracking-[0.25em] uppercase text-[#FFD700] mb-3 font-semibold">Projeto nosso</div>
             <h3 className="font-['Outfit'] text-2xl md:text-3xl font-light text-white tracking-tight">
               FlowOps: aprovação de posts para social media
@@ -88,16 +89,46 @@ export const Testimonials = () => {
               Um aplicativo que a própria Denizio's criou. O profissional envia o trabalho e o cliente aprova
               com um toque, tudo registrado num lugar só. É o tipo de sistema sob medida que a gente constrói para o seu negócio.
             </p>
+            <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4">
+              <Link
+                to="/flowops"
+                className="btn-shine inline-flex items-center gap-2 bg-[#FFD700] text-black font-semibold rounded-full px-7 py-4 hover:shadow-[0_0_30px_rgba(255,215,0,0.4)] transition-all whitespace-nowrap"
+                data-testid="flowops-page-link"
+              >
+                Ver o app por dentro <ArrowRight size={18} />
+              </Link>
+              <a
+                href="https://site-flowops.deniziosglobal.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#FFD700] font-medium hover:underline underline-offset-4 whitespace-nowrap"
+                data-testid="flowops-project-link"
+              >
+                Conhecer o FlowOps <ExternalLink size={16} />
+              </a>
+            </div>
           </div>
-          <a
-            href="https://site-flowops.deniziosglobal.com.br/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-shine inline-flex items-center gap-2 bg-[#FFD700] text-black font-semibold rounded-full px-7 py-4 hover:shadow-[0_0_30px_rgba(255,215,0,0.4)] transition-all whitespace-nowrap shrink-0 self-start md:self-auto"
-            data-testid="flowops-project-link"
-          >
-            Conhecer o FlowOps <ExternalLink size={18} />
-          </a>
+
+          <div className="flex shrink-0 items-start justify-center gap-4 self-center" data-testid="flowops-screens">
+            <img
+              src="/img/flowops-inicio.webp"
+              alt="Tela inicial do aplicativo FlowOps com pendências e trabalhos aguardando aprovação"
+              width="720"
+              height="1280"
+              loading="lazy"
+              decoding="async"
+              className="w-28 sm:w-36 md:w-40 h-auto rounded-2xl border border-[#FFD700]/25 shadow-[0_0_30px_rgba(255,215,0,0.10)]"
+            />
+            <img
+              src="/img/flowops-trabalhos.webp"
+              alt="Tela de trabalhos do aplicativo FlowOps com filtros por status"
+              width="720"
+              height="1280"
+              loading="lazy"
+              decoding="async"
+              className="w-28 sm:w-36 md:w-40 h-auto rounded-2xl border border-[#FFD700]/25 shadow-[0_0_30px_rgba(255,215,0,0.10)] mt-8"
+            />
+          </div>
         </motion.div>
       </div>
     </section>
